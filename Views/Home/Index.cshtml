@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .btn {
+            font-size:large;
+        }
+
+        .flex-grow-1 {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            justify-content: space-evenly;
+        }
+
+        h3 {
+            margin-top:15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text-center">
+        <h1 class="display-4">HR Application</h1>
+        <img src="~/images/HRLogo.png.jpg" style="max-width:10%" />
+        <h3>Go to <a asp-action="Employees" class="btn btn-outline-primary">Employees</a></h3>
+        <h3>View <a asp-action="AllEmployees" class="btn btn-outline-primary">All Employees</a></h3>
+    </div>
+
+
+</body>
+</html>
